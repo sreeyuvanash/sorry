@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Apology to a Friend</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fce7d7, #ff99cc);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s infinite;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            max-width: 600px;
+            text-align: left;
+            margin: 20px;
+            animation: pulsate 4s infinite;
+        }
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            color: #ff6666;
+            font-size: 36px;
+            margin-bottom: 20px;
+            transform: scale(1.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.2);
+        }
+
+        .apology-message {
+            font-style: italic;
+            font-size: 20px;
+            line-height: 1.6;
+            animation: bounce 2s infinite;
+            margin-top: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .apology-message:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 100%;
+                transform: rotate(0deg);
+                transform-origin: center;
+                filter: hue-rotate(0deg);
+            }
+           
+            50% {
+                background-position: 0% 100%;
+                transform: rotate(180deg);
+                transform-origin: center;
+                filter: hue-rotate(360deg);
+            }
+            100% {
+                background-position: 0% 100%;
+                transform: rotate(360deg);
+                transform-origin: center;
+                filter: hue-rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Apology to a Friend</h1>
+        <p>Dear Friend,</p>
+        <p class="apology-message">I want to sincerely apologize for my actions. I deeply regret what I did and wish to make amends.</p>
+        <p>Please accept my heartfelt apology.</p>
+    </div>
+</body>
+</html>
